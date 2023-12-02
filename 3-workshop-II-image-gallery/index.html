@@ -1,9 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  .form-input {
+    /* border: 1.5px solid lightgray; */
+    border-radius: 6px;
+    padding: 10px;
+    font-size: small;
+  }
+
+  .card-image {
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+</style>
+
+<body class="flex flex-col justify-center items-center h-screen">
+  <div class="container">
+    <nav class="flex justify-end bg-gray-200 p-8 ">
+      <ul class="flex gap-8">
+        <li><a href=""></a>Vector</li>
+        <li><a href=""></a>Illustrations</li>
+        <li><a href=""></a>Images</li>
+        <li><a href=""></a>Icons</li>
+      </ul>
+
+
+    </nav>
+    <div class="search flex justify-between items-center p-4">
+      <div class="search-input relative w-1/2">
+        <input class="form-input w-full ring-1 ring-inset ring-gray-200 text-gray bg-white" type="text"
+          placeholder="Search">
+        <button type="button" class="absolute">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </button>
+      </div>
+
+      <input type="file" name="file" id="file-input" class="hidden">
+      <label for="file-input" class="bg-black text-white rounded-md py-3 px-12">Upload</label>
+    </div>
+    <div class="card-main">
+      <div class="card-image flex flex-row gap-10">
+        <img class="image" src="images/image1.jpg" alt="image">
+        <img class="image" src="images/image2.jpg" alt="image">
+        <img class="image" src="images/image3.jpg" alt="image">
+      </div>
+      <div class="card-image flex flex-row gap-10 mt-10">
+        <img class="image" src="images/image4.jpg" alt="image">
+        <img class="image" src="images/image5.jpg" alt="image">
+        <img class="image" src="images/image6.jpg" alt="image">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
 </html>

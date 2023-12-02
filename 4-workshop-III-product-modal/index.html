@@ -1,9 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <style>
+    /* .card-outside {
+        background-color: red;
+        width: 500px;
+        height: 500px;
+      } */
+
+    .card-main {
+      background-color: white;
+    }
+
+    .card-image {
+      display: block;
+      width: 200px;
+      height: auto;
+    }
+
+    .image {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .card-info {
+      padding-top: 40px;
+      padding-left: 40px;
+    }
+
+    .card-text {
+      color: white;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      font-size: small;
+    }
+
+    .form-input {
+      /* border: 1.5px solid lightgray; */
+      border-radius: 6px;
+      padding: 10px;
+      background-color: white;
+      font-size: small;
+    }
+
+    /* .button-subscribe {
+        font-size: small;
+        background-color: #84CC16;
+      } */
+  </style>
+
+  <body>
+    <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+
+      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+
+      <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+
+          <div
+            class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+            <div class="card-outside">
+              <div class="card-main p-2">
+                <div class="sm:flex sm:items-start">
+                  <div class="card-image">
+                    <img class="image" src="images/headphone.png" alt="image">
+                  </div>
+                  <div class="card-info">
+                    <h3 class="text-base font-semibold leading-6 text-black text-lg" id="modal-title">Razer Kraken
+                      Kitty Edt
+                      Gaming Headset Quartz</h3>
+                    <!-- <div class="mt-2"> -->
+                    <p class="card-text">Eat better and exercise better. Sign up for the Diet&Fitness
+                      newsletter.</p>
+                    <input class="form-input ring-1 ring-inset ring-gray-600" type="text"
+                      placeholder="Enter your email address">
+                    <button type="button"
+                      class="button-subscribe inline-flex w-full justify-center rounded-md bg-[#84CC16] px-2 py-2 text-sm font-semibold text-black shadow-sm hover:bg-gray-50 sm:ml-3 sm:w-auto">Subscribe</button>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    </div>
+
+  </body>
+
 </html>

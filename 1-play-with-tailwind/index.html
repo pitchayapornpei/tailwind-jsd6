@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#da373d',
+          },
+        },
+      },
+    };
+  </script>
+
+  <link type="text/tailwindcss" rel="stylesheet" href>
+  @layer utilities {
+  .my-text {
+  color: aqua;
+  }
+  }
+  </link>
+
+</head>
+
+<body>
+  <!-- JIT : Just in time Compilation -->
+  <div class="bg-slate-800 box hover:w-screen">
+    <h1 class="dark:text-white my-text font-mono text-3xl font-thin underline underline-offset-8">Hello world!</h1>
+    <h1 class="my-text font-mono text-3xl font-thin underline underline-offset-8">Hello world!</h1>
+
+  </div>
+</body>
+
 </html>
